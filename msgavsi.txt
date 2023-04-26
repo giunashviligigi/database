@@ -1,0 +1,36 @@
+
+1)
+CREATE TABLE University (
+  st_id INT NOT NULL,
+  st_jgufi VARCHAR(50) NOT NULL,
+  st_gvari VARCHAR(50),
+  st_saxeli VARCHAR(50),
+  PRIMARY KEY (st_id, st_jgufi)
+);
+
+
+2)DROP DATABASE IF EXISTS University;
+
+
+3)SELECT *
+FROM information_schema.TABLE_CONSTRAINTS
+WHERE TABLE_NAME = 'Student';
+
+
+
+1)SELECT MIN(salary) as min_salary
+FROM users;
+
+
+2)SELECT *
+FROM information_schema.statistics
+WHERE TABLE_SCHEMA = 'University' AND TABLE_NAME = 'Student';
+
+
+
+3)CREATE TABLE University.Student (
+  st_id INT NOT NULL PRIMARY KEY,
+  st_gvari VARCHAR(50),
+  st_saxeli VARCHAR(50),
+  st_dabadebis_tarigi DATE
+);
